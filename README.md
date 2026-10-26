@@ -1,6 +1,6 @@
 # Release Information
 
-- **Version**: 1.0.0
+- **Version**: 1.0.1
 
 - **Certified**: Yes
 
@@ -9,6 +9,8 @@
 - **Scope**: Context and Enrichment, Triage
 
 - **Verified with Models**: Fortinet FortiAI (AI model Medium)
+
+- [Release Notes](./release_notes.md)
 
 # Organizational Context Provider
 
@@ -23,11 +25,12 @@ This agent installs along with the FortiAI solution pack.
 **Required MCP Servers**: NA
 
 <!-- > [!Note]
->
 > Refer to [Configuring MCP Servers](https://docs.fortinet.com/document/fortisoar/8.0.0/administration-guide/823139/mcp-servers#Configure_MCP_Servers) on FortiSOAR platform documentation for information on configuring a custom MCP server.
->  -->
+-->
 
 ### Prerequisites
+
+The following prerequisites must be met before using this agent:
 
 - The FortiAI solution pack must be installed and configured with the Fortinet FortiAI connector.
 
@@ -35,10 +38,7 @@ This agent installs along with the FortiAI solution pack.
   - To configure the Fortinet FortiAI connector, refer to the [Fortinet FortiAI](https://docs.fortinet.com/fortisoar/connectors/fortinet-fortiai) connector documentation.
 
 > [!Note]
->
-> FortiAI solution pack and Fortinet FortiAI connector are preconfigured out-of-the-box with FortiSOAR `v8.0.0`.
-> 
-
+> The FortiAI solution pack and the Fortinet FortiAI connector are preconfigured out-of-the-box with FortiSOAR `v8.0.1` and later.
 
 ## Input Parameters
 
@@ -53,9 +53,8 @@ The input must be provided as a JSON object.
 
 The output is returned as a JSON object.
 
-| Parameter    | Description                                                     |
-|--------------|-----------------------------------------------------------------|
-| `answer`     | Answer to the query derived from available data.                |
-| `confidence` | Confidence percentage indicating reliability of the answer (For example: *85%*).     |
-| `evidence`   | Supporting information and details from retrieved data sources. |
-
+| Parameter    | Description                                                                       |
+|--------------|-----------------------------------------------------------------------------------|
+| `answer`     | Answer to the query derived from available data.                                  |
+| `confidence` | Confidence percentage indicating reliability of the answer (For example: *85%*). |
+| `evidence`   | Supporting information and details from retrieved data sources.                  |
